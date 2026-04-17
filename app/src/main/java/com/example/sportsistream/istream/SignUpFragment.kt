@@ -1,5 +1,4 @@
 package com.example.sportsistream.istream
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +11,7 @@ import com.example.sportsistream.istream.db.UserEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-
 class SignUpFragment : Fragment() {
-
     private var _binding: FragmentSignupBinding? = null
     private val binding get() = _binding!!
 
@@ -22,27 +19,21 @@ class SignUpFragment : Fragment() {
         _binding = FragmentSignupBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.btnBack.setOnClickListener {
             (parentFragment as IStreamHostFragment).onBack()
         }
-
         binding.btnCreate.setOnClickListener { attemptSignUp() }
-
         binding.tvSignIn.setOnClickListener {
             (parentFragment as IStreamHostFragment).onBack()
         }
     }
-
     private fun attemptSignUp() {
         val fullName = binding.etFullName.text.toString().trim()
         val username = binding.etUsername.text.toString().trim()
         val password = binding.etPassword.text.toString()
         val confirm = binding.etConfirmPassword.text.toString()
-
         if (fullName.isEmpty() || username.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
             showError("Please fill in all fields"); return
         }
@@ -55,10 +46,8 @@ class SignUpFragment : Fragment() {
         if (password != confirm) {
             showError("Passwords do not match"); return
         }
-
         binding.tvError.visibility = View.GONE
         binding.btnCreate.isEnabled = false
-
         lifecycleScope.launch {
             val db = AppDatabase.getInstance(requireContext())
             val exists = withContext(Dispatchers.IO) { db.userDao().usernameExists(username) } > 0
@@ -75,13 +64,11 @@ class SignUpFragment : Fragment() {
             }
         }
     }
-
     private fun showError(msg: String) {
         binding.tvError.text = msg
         binding.tvError.visibility = View.VISIBLE
         binding.btnCreate.isEnabled = true
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

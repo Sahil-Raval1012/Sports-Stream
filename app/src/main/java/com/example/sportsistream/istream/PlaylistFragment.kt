@@ -1,5 +1,4 @@
 package com.example.sportsistream.istream
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,36 +12,27 @@ import com.example.sportsistream.istream.db.PlaylistEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-
 class PlaylistFragment : Fragment() {
-
     private var _binding: FragmentPlaylistBinding? = null
     private val binding get() = _binding!!
-
     private lateinit var adapter: PlaylistAdapter
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentPlaylistBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val fullName = SessionManager.getFullName(requireContext()) ?: ""
         binding.tvSubtitle.text = fullName
-
         binding.btnBack.setOnClickListener {
             (parentFragment as IStreamHostFragment).onBack()
         }
-
         binding.btnLogout.setOnClickListener {
             SessionManager.clear(requireContext())
             (parentFragment as IStreamHostFragment).navigateTo(
                 LoginFragment(), addToBackStack = false, clearStack = true
             )
         }
-
         adapter = PlaylistAdapter(
             onPlay = { item ->
                 val fragment = IStreamHomeFragment().apply {
@@ -54,13 +44,11 @@ class PlaylistFragment : Fragment() {
             },
             onDelete = { item -> deleteItem(item) }
         )
-
         binding.rvPlaylist.layoutManager = LinearLayoutManager(requireContext())
         binding.rvPlaylist.adapter = adapter
 
         loadPlaylist()
     }
-
     private fun loadPlaylist() {
         val userId = SessionManager.getUserId(requireContext()) ?: return
         lifecycleScope.launch {
@@ -77,7 +65,6 @@ class PlaylistFragment : Fragment() {
             }
         }
     }
-
     private fun deleteItem(item: PlaylistEntity) {
         lifecycleScope.launch {
             withContext(Dispatchers.IO) {
@@ -86,7 +73,6 @@ class PlaylistFragment : Fragment() {
             loadPlaylist()
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

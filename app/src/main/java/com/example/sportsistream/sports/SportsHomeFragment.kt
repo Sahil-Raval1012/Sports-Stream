@@ -1,5 +1,4 @@
 package com.example.sportsistream.sports
-
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.text.Editable
@@ -62,7 +61,7 @@ class SportsHomeFragment : Fragment() {
             }
         )
         binding.rvNews.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             adapter = newsAdapter
             isNestedScrollingEnabled = false
         }
