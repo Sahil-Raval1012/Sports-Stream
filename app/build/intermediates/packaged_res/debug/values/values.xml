@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="bookmarkActive">#E3F2FD</color>
+    <color name="catBasketball">#E65100</color>
+    <color name="catCricket">#1565C0</color>
+    <color name="catFootball">#2E7D32</color>
+    <color name="catRugby">#C62828</color>
+    <color name="catTennis">#F9A825</color>
+    <color name="colorAccent">#DC2626</color>
+    <color name="colorPrimary">#d0eff7</color>
+    <color name="colorPrimaryDark">#371628</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Sports &amp; iStream</string>
+    <string name="tab_istream">iStream</string>
+    <string name="tab_sports">Sports News</string>
+    <style name="Theme.SportsIStream" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

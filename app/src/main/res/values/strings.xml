@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sports &amp; iStream</string>
+    <string name="tab_sports">Sports News</string>
+    <string name="tab_istream">iStream</string>
+</resources>

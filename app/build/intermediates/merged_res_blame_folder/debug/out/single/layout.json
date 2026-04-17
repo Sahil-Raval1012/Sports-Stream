@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "com.example.sportsistream.app-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "com.example.sportsistream.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_bookmarks.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_sports_bookmarks.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_login.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_signup.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_i_stream_home.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_i_stream_home.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_detail.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_sports_detail.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/item_news.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/item_news.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/item_featured_match.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/item_featured_match.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_i_stream_host.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_i_stream_host.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_host.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_sports_host.xml"
+    },
+    {
+        "merged": "com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_home.xml",
+        "source": "com.example.sportsistream.app-main-55:/layout/fragment_sports_home.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_playlist.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_playlist.xml"
+    },
+    {
+        "merged": "com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_detail.xml",
+        "source": "com.example.sportsistream.app-main-55:/layout/fragment_sports_detail.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/item_playlist.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/item_playlist.xml"
+    },
+    {
+        "merged": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-mergeDebugResources-52:/layout/fragment_sports_home.xml",
+        "source": "/Users/prakashraval/.gradle/daemon/8.4/com.example.sportsistream.app-main-55:/layout/fragment_sports_home.xml"
+    }
+]
